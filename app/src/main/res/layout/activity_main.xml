@@ -12,5 +12,31 @@
         android:layout_height="match_parent"
         android:clipToPadding="false"
         android:padding="4dp"
-        tools:listitem="@layout/example_item" />
+        tools:listitem="@layout/example_item"
+        android:layout_above="@+id/buttons"
+        />
+    <LinearLayout
+       android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="4dp"
+        android:clipToPadding="true"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insert Item"
+            android:layout_weight="1"
+            android:onClick="insertitem"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove Item"
+            android:layout_weight="1"
+            android:onClick="removeitem"
+            />
+    </LinearLayout>
 </RelativeLayout>
